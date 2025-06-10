@@ -107,8 +107,9 @@ const Page = () => {
           <div className="row">
             <div className={`col-lg-5 col-md-5 col-sm-12 col-12 d-flex align-items-md-start justify-content-md-end mb-4`}>
               <div className={`${styles.customBorderContent} px-5`}>
-                <h2>Our Mission</h2>
-                <p className='fs-12 py-md-3'>We push the change in technologies and policies needed to get to a zero-emissions, high-energy planet at an affordable cost. Imagine a world where the energy needs of all humans are met efficiently without damaging the atmosphere.</p>
+                <h2>Introduction </h2>
+                <p className='fs-10 py-md-3'>
+                  Nurturing Mankind has been started by a team of passionate individuals who want to create a positive impact on the society by providing basic education, healthcare, creating livelihood opportunities by fostering growth in sync with traditional craft and sustainable eco friendly materials with a focus on women empowerment, protecting and conservation of animal life and environment, working towards disaster mitigation and working towards poverty alleviation. </p>
                 <p className='fs-12 py-md-1'> <span><i className="fa-regular fa-circle-dot cutom-all-bg text-white rounded-5"></i></span> Protect and enhance environment</p>
                 <p className='fs-12 py-md-1'> <span><i className="fa-regular fa-circle-dot cutom-all-bg text-white rounded-5"></i></span> Keeping alive wildlife for future generations.</p>
                 <p className='fs-12 py-md-1'> <span ><i className="fa-regular fa-circle-dot cutom-all-bg text-white rounded-5"></i></span> Risk assessment and information management.</p>
@@ -278,7 +279,7 @@ const Page = () => {
                     <p className='text-uppercase fs-10 fw-bold'>Latest Organization News</p>
                     <h3 className='fw-bold'>Newsroom</h3>
                     <div className={`${styles.CustomPostionHeight}`}>
-                      <img className='w-75' src="/assets/img/np-bg-3.png"alt="" />
+                      <img className='w-75' src="/assets/img/np-bg-3.png" alt="" />
                     </div>
                   </div>
                   <div className='w-100'>
@@ -298,20 +299,20 @@ const Page = () => {
                 </div>
               </div>
               <div className="col-lg-5 col-md-5 col-sm-12 col-12">
-                   <div> 
-                      <p className='fs-8'>Kim Preshoff presents “Why is biodiversity so important?”</p>
-                       <div>
-                          <img className='img-fluid' src="/assets/img/footer-top-img.jpg" alt="" />
-                       </div>
-                   </div>
+                <div>
+                  <p className='fs-8'>Kim Preshoff presents “Why is biodiversity so important?”</p>
+                  <div>
+                    <img className='img-fluid' src="/assets/img/footer-top-img.jpg" alt="" />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      
+
       <section className={`${styles.footerHome}`}>
-          <Footer/>
+        <Footer />
       </section>
     </main>
   );

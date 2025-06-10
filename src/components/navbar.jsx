@@ -45,46 +45,77 @@ export default function Navbar() {
               <div onClick={toggleMenu} className="bars-icon-dislpay text-end text-white">
                 <i className="fa-solid fa-xmark"></i>
               </div>
-              <ul className="d-md-flex d-block align-items-xl-center gap-4 m-0 p-0">
+              <ul className="d-md-flex d-block align-items-xl-center  gap-3 m-0 p-0">
                 <li className="list-style-none">
                   <Link href="/" onClick={closeAllMenus} className="text-decoration-none custom-all-color-white text-uppercase fs-12">home</Link>
                 </li>
                 <li className="list-style-none position-relative dropdown-parent">
                   <div className="d-flex align-items-center justify-content-between">
-                    <span className="text-decoration-none custom-all-color-white text-uppercase fs-12 py-lg-4 py-2 mt-1">pages</span>
+                    <Link href="/about" className="text-decoration-none custom-all-color-white text-uppercase fs-12 py-lg-4 py-2 mt-1">about</Link>
                     <i
-                      className={`fa-solid fa-caret-down ps-2 mt-1 text-white fs-10 cursor-pointer d-xl-none ${openSubMenu === 'pages' ? 'rotate-180' : ''}`}
-                      onClick={(e) => toggleSubMenu('pages', e)}
+                      className={`fa-solid fa-caret-down ps-2 mt-1 text-white fs-10 cursor-pointer d-xl-none ${openSubMenu === 'about' ? 'rotate-180' : ''}`}
+                      onClick={(e) => toggleSubMenu('about', e)}
                     ></i>
                   </div>
                   <ul className={`dropdown-wrapper p-0 ${openSubMenu === 'pages' ? 'submenu-open' : ''}`}>
-                    <li className="list-style-none py-2 dropdown-bottom-border"><Link href="/faqs" onClick={closeAllMenus} className="text-decoration-none text-white text-uppercase fs-10">faqs</Link></li>
-                    <li className="list-style-none py-2 dropdown-bottom-border"><Link href="/about" onClick={closeAllMenus} className="text-decoration-none text-white text-uppercase fs-10">about us</Link></li>
-                    <li className="list-style-none py-2 dropdown-bottom-border"><Link href="/contact" onClick={closeAllMenus} className="text-decoration-none text-white text-uppercase fs-10">contact</Link></li>
-                    <li className="list-style-none py-2 dropdown-bottom-border"><Link href="/cases" onClick={closeAllMenus} className="text-decoration-none text-white text-uppercase fs-10">cases / donations</Link></li>
-                    <li className="list-style-none py-2 dropdown-bottom-border"><Link href="/events" onClick={closeAllMenus} className="text-decoration-none text-white text-uppercase fs-10">events</Link></li>
-                    <li className="list-style-none py-2"><Link href="/404" onClick={closeAllMenus} className="text-decoration-none text-white text-uppercase fs-10">error 404</Link></li>
-                  </ul>
-                </li>
- 
-                <li className="list-style-none position-relative dropdown-parent">
-                  <div className="d-flex align-items-center justify-content-between">
-                    <span className="text-decoration-none custom-all-color-white text-uppercase fs-12 py-lg-4 py-2 mt-1">news</span>
-                    <i
-                      className={`fa-solid fa-caret-down ps-2 mt-1 fs-10 text-white cursor-pointer d-xl-none ${openSubMenu === 'news' ? 'rotate-180' : ''}`}
-                      onClick={(e) => toggleSubMenu('news', e)}
-                    ></i>
-                  </div>
-                  <ul className={`dropdown-wrapper p-0 ${openSubMenu === 'news' ? 'submenu-open' : ''}`}>
-                    <li className="list-style-none py-2 dropdown-bottom-border"><Link href="/faqs" onClick={closeAllMenus} className="text-decoration-none text-white text-uppercase fs-10">post without sidebar</Link></li>
-                    <li className="list-style-none py-2 dropdown-bottom-border"><Link href="/about" onClick={closeAllMenus} className="text-decoration-none text-white text-uppercase fs-10">post with right sidebar</Link></li>
-                    <li className="list-style-none py-2 dropdown-bottom-border"><Link href="/contact" onClick={closeAllMenus} className="text-decoration-none text-white text-uppercase fs-10">post with left sidebar</Link></li>
+                    <li className="list-style-none py-2 dropdown-bottom-border"><Link href="/faqs" onClick={closeAllMenus} className="text-decoration-none text-white text-uppercase fs-10">Introduction</Link></li>
+                    <li className="list-style-none py-2 dropdown-bottom-border"><Link href="/about" onClick={closeAllMenus} className="text-decoration-none text-white text-uppercase fs-10">Vision</Link></li>
+                    <li className="list-style-none py-2 dropdown-bottom-border"><Link href="/contact" onClick={closeAllMenus} className="text-decoration-none text-white text-uppercase fs-10">Mission</Link></li>
+                    <li className="list-style-none py-2 dropdown-bottom-border"><Link href="/cases" onClick={closeAllMenus} className="text-decoration-none text-white text-uppercase fs-10">Governing Body</Link></li>
                   </ul>
                 </li>
 
-                <li className="list-style-none py-2"><Link href="/about" onClick={closeAllMenus} className="text-decoration-none custom-all-color-white text-uppercase fs-12 ">about us</Link></li>
-                <li className="list-style-none py-2"><Link href="/contact" onClick={closeAllMenus} className="text-decoration-none custom-all-color-white text-uppercase fs-12 ">contact</Link></li>
-                <li className="list-style-none py-2"><Link href="/events" onClick={closeAllMenus} className="text-decoration-none custom-all-color-white text-uppercase fs-12 ">events</Link></li>
+                <li className="list-style-none position-relative dropdown-parent">
+                  <div className="d-flex align-items-center justify-content-between">
+                    <span className="text-decoration-none custom-all-color-white text-uppercase fs-12 py-lg-4 py-2 mt-1">Our Works</span>
+                    <i
+                      className={`fa-solid fa-caret-down ps-2 mt-1 text-white fs-10 cursor-pointer d-xl-none ${openSubMenu === 'works' ? 'rotate-180' : ''}`}
+                      onClick={(e) => toggleSubMenu('works', e)}
+                    ></i>
+                  </div>
+                  <ul className={`dropdown-wrapper p-0 ${openSubMenu === 'works' ? 'submenu-open' : ''}`}>
+                    <li className="list-style-none py-2 dropdown-bottom-border"><Link href="/faqs" onClick={closeAllMenus} className="text-decoration-none text-white text-uppercase fs-10">Animal Welfare</Link></li>
+                    <li className="list-style-none py-2 dropdown-bottom-border"><Link href="/about" onClick={closeAllMenus} className="text-decoration-none text-white text-uppercase fs-10">Livelihood</Link></li>
+                  </ul>
+                </li>
+
+                <li className="list-style-none position-relative dropdown-parent">
+                  <div className="d-flex align-items-center justify-content-between">
+                    <span className="text-decoration-none custom-all-color-white text-uppercase fs-12 py-lg-4 py-2 mt-1">Campaigns</span>
+                    <i
+                      className={`fa-solid fa-caret-down ps-2 mt-1 fs-10 text-white cursor-pointer d-xl-none ${openSubMenu === 'campaigns' ? 'rotate-180' : ''}`}
+                      onClick={(e) => toggleSubMenu('campaigns', e)}
+                    ></i>
+                  </div>
+                  <ul className={`dropdown-wrapper p-0 ${openSubMenu === 'campaigns' ? 'submenu-open' : ''}`}>
+                    <li className="list-style-none py-2 dropdown-bottom-border"><Link href="/faqs" onClick={closeAllMenus} className="text-decoration-none text-white text-uppercase fs-10">Eradicating Dog Mediated Rabies by 2030</Link></li>
+                    <li className="list-style-none py-2 dropdown-bottom-border"><Link href="/about" onClick={closeAllMenus} className="text-decoration-none text-white text-uppercase fs-10">Reducing Stray Dog Hit & Run Road Fatalities</Link></li>
+                    <li className="list-style-none py-2 dropdown-bottom-border"><Link href="/contact" onClick={closeAllMenus} className="text-decoration-none text-white text-uppercase fs-10">Vaccinating Stray Dogs against life threatnening diseases</Link></li>
+                  </ul>
+                </li>
+
+                <li className="list-style-none position-relative dropdown-parent">
+                  <div className="d-flex align-items-center justify-content-between">
+                    <span className="text-decoration-none custom-all-color-white text-uppercase fs-12 py-lg-4 py-2 mt-1">Volunteer</span>
+                    <i
+                      className={`fa-solid fa-caret-down ps-2 mt-1 fs-10 text-white cursor-pointer d-xl-none ${openSubMenu === 'volunteer' ? 'rotate-180' : ''}`}
+                      onClick={(e) => toggleSubMenu('volunteer', e)}
+                    ></i>
+                  </div>
+                  <ul className={`dropdown-wrapper p-0 ${openSubMenu === 'volunteer' ? 'submenu-open' : ''}`}>
+                    <li className="list-style-none py-2 dropdown-bottom-border"><Link href="/faqs" onClick={closeAllMenus} className="text-decoration-none text-white text-uppercase fs-10">Get Involved</Link></li>
+                    <li className="list-style-none py-2 dropdown-bottom-border"><Link href="/supportUs" onClick={closeAllMenus} className="text-decoration-none text-white text-uppercase fs-10">supportUs</Link></li>
+                    <li className="list-style-none py-2 dropdown-bottom-border"><Link href="/faqs" onClick={closeAllMenus} className="text-decoration-none text-white text-uppercase fs-10">Sponsor</Link></li>
+                    <li className="list-style-none py-2 dropdown-bottom-border"><Link href="/about" onClick={closeAllMenus} className="text-decoration-none text-white text-uppercase fs-10">Donate</Link></li>
+                    <li className="list-style-none py-2"><Link href="/testimonials" onClick={closeAllMenus} className="text-decoration-none custom-all-color-white text-uppercase fs-12 ">Testimonials</Link></li>
+                  </ul>
+                </li>
+                <li className="list-style-none py-2"><Link href="/workus" onClick={closeAllMenus} className="text-decoration-none custom-all-color-white text-uppercase fs-12 ">Work with Us</Link></li>
+                <li className="list-style-none py-2"><Link href="/gallery" onClick={closeAllMenus} className="text-decoration-none custom-all-color-white text-uppercase fs-12 ">Gallery</Link></li>
+                <li className="list-style-none py-2"><Link href="/newsEvents" onClick={closeAllMenus} className="text-decoration-none custom-all-color-white text-uppercase fs-12 ">News & Events</Link></li>
+                <li className="list-style-none py-2"><Link href="/imStories" onClick={closeAllMenus} className="text-decoration-none custom-all-color-white text-uppercase fs-12 ">Impact Stories</Link></li>
+
+                <li className="list-style-none py-2"><Link href="/contact" onClick={closeAllMenus} className="text-decoration-none custom-all-color-white text-uppercase fs-12 ">Contact Us</Link></li>
               </ul>
             </div>
           </div>
