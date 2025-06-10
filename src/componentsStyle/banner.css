@@ -110,6 +110,13 @@
     text-align: center;
     width: 100vw;
 }
+.slick-arrow.slick-next{
+    position: absolute;
+    display: block;  
+    left: 94% !important;
+    top: 50%; 
+    z-index: 98;
+}
 }
 
 @media (min-width: 526px) and (max-width: 1024px) {
