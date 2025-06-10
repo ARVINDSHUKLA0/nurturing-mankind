@@ -1,0 +1,287 @@
+.section {
+    position: relative;
+}
+
+.bgImg {
+    object-fit: cover;
+    position: absolute;
+    top: -160px;
+    z-index: -1;
+}
+
+.blueBox {
+    padding: 40px;
+    border: 2px solid #000;
+}
+
+.title {
+    color: #999;
+    font-weight: 600;
+    border-top: 1px solid #333;
+    padding-top: 15px;
+    margin-bottom: 10px;
+}
+
+.titleRed {
+    composes: title;
+    color: orangered;
+}
+
+.titleOrange {
+    composes: title;
+    color: darkorange;
+}
+
+.decorTop {
+    position: absolute;
+    top: -55px;
+    left: -68px;
+    z-index: 1;
+}
+
+.decorBottom {
+    position: absolute;
+    right: 0;
+    top: 140px;
+    z-index: -1;
+    width: 300px;
+    height: 450px;
+}
+
+.imgesContent {
+    z-index: 1;
+}
+
+.imgesContinerCenter {
+    height: 450px;
+    width: 100%;
+}
+
+.imgesContinerCenter img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+.imgesContinerCenter::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+    z-index: 2;
+    pointer-events: none;
+}
+
+.imgesContinerRight {
+    height: 450px;
+    width: 100%;
+}
+
+.imgesContinerRight img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: right;
+}
+
+.ImgesPostion {
+    position: absolute;
+    top: 60%;
+    left: 8%;
+    right: 8%;
+}
+
+.imgesContinerRight::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.195);
+    z-index: 2;
+    pointer-events: none;
+}
+
+.customBorderContent {
+    border: 2px solid black;
+    width: 70%;
+    height: 85%;
+    display: block;
+    padding: 20px;
+}
+
+.MaginContent {
+    margin-right: 0px;
+    padding: 30px 15px;
+}
+
+.countbgOne {
+    background-color: #326781;
+}
+
+.countbgTwo {
+    background-color: #B32C1A;
+}
+
+.countbgThree {
+    background-color: #81C68A;
+}
+
+.countbgFour {
+    background-color: #FF6947;
+}
+
+.countbgFive {
+    background-color: #FF9147;
+}
+
+.ceoPostionImges {
+    background-color: #D4DCE4;
+    width: 30%;
+    height: 39%;
+    height: 100%;
+    max-height: 100%;
+    z-index: 99;
+    position: absolute;
+    left: -26%;
+    top: 0;
+}
+
+.postionContent {
+    position: absolute;
+    top: 85%;
+    left: 13%;
+    background-color: white;
+    padding: 20px;
+}
+
+.slantedBox {
+    width: 20%;
+    height: 4px;
+    margin-bottom: 20px;
+    background-color: #aac7d8;
+    clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
+}
+
+.zIndexCustom {
+    z-index: -1;
+}
+
+.footerHome {
+    z-index: 1;
+}
+
+.CustomPostionHeight {
+    position: absolute;
+    top: 30%;
+    z-index: -1;
+}
+
+@media (min-width: 0px) and (max-width: 1024px) {
+    .title {
+        color: #999;
+        font-weight: 600;
+        border-top: 1px solid #333;
+        padding-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .decorTop {
+        display: none;
+    }
+
+    .decorBottom {
+        position: absolute;
+        right: 0;
+        top: 0px;
+        left: -50px;
+        z-index: -1;
+        width: 150px;
+        height: 200px;
+    }
+
+    .ImgesPostion {
+        position: absolute;
+        top: 20%;
+        left: 8%;
+        right: 8%;
+    }
+
+    .imgesContinerCenter {
+        height: 300px;
+        width: 100%;
+    }
+
+    .imgesContinerRight {
+        height: 300px;
+        width: 100%;
+    }
+
+    .customBorderContent {
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+}
+
+@media (min-width: 0px) and (max-width: 525px) {
+    .imgesContinerCenter {
+        height: 250px;
+        width: 100%;
+    }
+
+    .imgesContinerRight {
+        height: 250px;
+        width: 100%;
+    }
+
+    .ImgesPostion {
+        position: absolute;
+        top: 30%;
+        left: 8%;
+        right: 8%;
+    }
+
+    .customBorderContent {
+        width: 100%;
+        border: 2px solid black;
+    }
+
+    .ceoPostionImges {
+        display: none;
+    }
+
+    .postionContent {
+        position: relative;
+        left: 0px;
+        top: 0px;
+    }
+
+    .CustomPostionHeight {
+        display: none;
+    }
+}
+
+@media (min-width: 526px) and (max-width: 768px) {
+    .customBorderContent {
+        width: 100%;
+        height: 100%;
+    }
+
+    .ceoPostionImges {
+        min-height: 55%;
+    }
+
+    .CustomPostionHeight {
+        display: none;
+    }
+
+}
