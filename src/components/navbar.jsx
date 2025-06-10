@@ -42,7 +42,9 @@ export default function Navbar() {
             </div>
 
             <div className={`custom-navbar-wrapper ${menuOpen ? 'active' : ''}`}>
-              <div onClick={toggleMenu} className="bars-icon-dislpay text-end text-white">Close</div>
+              <div onClick={toggleMenu} className="bars-icon-dislpay text-end text-white">
+                <i className="fa-solid fa-xmark"></i>
+              </div>
               <ul className="d-md-flex d-block align-items-xl-center gap-4 m-0 p-0">
                 <li className="list-style-none">
                   <Link href="/" onClick={closeAllMenus} className="text-decoration-none custom-all-color-white text-uppercase fs-12">home</Link>

@@ -16,7 +16,7 @@
   position: absolute;
   top: 100%;
   width: 200px;
-  padding: 15px;
+  padding: 15px !important;
   display: none;
   background-color: #455660;
   border-radius: 4px;
@@ -71,6 +71,7 @@
     padding-left: 15px;
     background-color: transparent;
     display: none;
+    padding: 0px !important;
   }
 
   .dropdown-wrapper.submenu-open {
