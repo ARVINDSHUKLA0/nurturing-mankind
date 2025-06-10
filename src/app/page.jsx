@@ -109,9 +109,9 @@ const Page = () => {
               <div className={`${styles.customBorderContent} px-5`}>
                 <h2>Our Mission</h2>
                 <p className='fs-12 py-md-3'>We push the change in technologies and policies needed to get to a zero-emissions, high-energy planet at an affordable cost. Imagine a world where the energy needs of all humans are met efficiently without damaging the atmosphere.</p>
-                <p className='fs-12 py-md-1'> <span><i class="fa-regular fa-circle-dot cutom-all-bg text-white rounded-5"></i></span> Protect and enhance environment</p>
-                <p className='fs-12 py-md-1'> <span><i class="fa-regular fa-circle-dot cutom-all-bg text-white rounded-5"></i></span> Keeping alive wildlife for future generations.</p>
-                <p className='fs-12 py-md-1'> <span ><i class="fa-regular fa-circle-dot cutom-all-bg text-white rounded-5"></i></span> Risk assessment and information management.</p>
+                <p className='fs-12 py-md-1'> <span><i className="fa-regular fa-circle-dot cutom-all-bg text-white rounded-5"></i></span> Protect and enhance environment</p>
+                <p className='fs-12 py-md-1'> <span><i className="fa-regular fa-circle-dot cutom-all-bg text-white rounded-5"></i></span> Keeping alive wildlife for future generations.</p>
+                <p className='fs-12 py-md-1'> <span ><i className="fa-regular fa-circle-dot cutom-all-bg text-white rounded-5"></i></span> Risk assessment and information management.</p>
               </div>
             </div>
             <div className="col-lg-6 col-md-7 col-sm-12 col-12 p-0">

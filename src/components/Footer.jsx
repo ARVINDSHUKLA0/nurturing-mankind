@@ -5,45 +5,45 @@ import Link from 'next/link';
 export default function Footer() {
   return (
     <>
-      <section class="text-white  footer-section-one pt-5">
-        <div class="container">
-          <div class="row text-start">
-            <div class="col-lg-3 col-md-6 mb-4">
-              <h6 class="text-uppercase fw-bold fs-14">Our Mission</h6>
-              <ul class="list-unstyled">
-                <li><Link href="#" class="text-white text-decoration-none fs-12 ">Save Leguans</Link></li>
-                <li><Link href="#" class="text-white text-decoration-none fs-12">Educational Conference</Link></li>
-                <li><Link href="#" class="text-white text-decoration-none fs-12">Florida Water Festival</Link></li>
-                <li><Link href="#" class="text-white text-decoration-none fs-12">Back To The Wild</Link></li>
+      <section className="text-white  footer-section-one pt-5">
+        <div className="container">
+          <div className="row text-start">
+            <div className="col-lg-3 col-md-6 mb-4">
+              <h6 className="text-uppercase fw-bold fs-14">Our Mission</h6>
+              <ul className="list-unstyled">
+                <li><Link href="#" className="text-white text-decoration-none fs-12 ">Save Leguans</Link></li>
+                <li><Link href="#" className="text-white text-decoration-none fs-12">Educational Conference</Link></li>
+                <li><Link href="#" className="text-white text-decoration-none fs-12">Florida Water Festival</Link></li>
+                <li><Link href="#" className="text-white text-decoration-none fs-12">Back To The Wild</Link></li>
               </ul>
             </div>
 
-            <div class="col-lg-3 col-md-6 mb-4">
-              <h6 class="text-uppercase fw-bold fs-14">About Us</h6>
-              <ul class="list-unstyled">
-                <li><Link href="#" class="text-white text-decoration-none fs-12">Events</Link></li>
-                <li><Link href="#" class="text-white text-decoration-none fs-12">Donations</Link></li>
-                <li><Link href="#" class="text-white text-decoration-none fs-12">News</Link></li>
-                <li><Link href="#" class="text-white text-decoration-none fs-12">Contact</Link></li>
-                <li><Link href="#" class="text-white text-decoration-none fs-12">About Us</Link></li>
+            <div className="col-lg-3 col-md-6 mb-4">
+              <h6 className="text-uppercase fw-bold fs-14">About Us</h6>
+              <ul className="list-unstyled">
+                <li><Link href="#" className="text-white text-decoration-none fs-12">Events</Link></li>
+                <li><Link href="#" className="text-white text-decoration-none fs-12">Donations</Link></li>
+                <li><Link href="#" className="text-white text-decoration-none fs-12">News</Link></li>
+                <li><Link href="#" className="text-white text-decoration-none fs-12">Contact</Link></li>
+                <li><Link href="#" className="text-white text-decoration-none fs-12">About Us</Link></li>
               </ul>
             </div>
-            <div class="col-lg-3 col-md-6 mb-4">
-              <h6 class="text-uppercase fw-bold fs-14">Partners</h6>
-              <ul class="list-unstyled">
-                <li><Link href="#" class="text-white text-decoration-none fs-12">Florida Water Association</Link></li>
-                <li><Link href="#" class="text-white text-decoration-none fs-12">Rainforest Trust</Link></li>
-                <li><Link href="#" class="text-white text-decoration-none fs-12">Saving the Rainforest</Link></li>
-                <li><Link href="#" class="text-white text-decoration-none fs-12">Koadas Wildlife Sanctuary</Link></li>
+            <div className="col-lg-3 col-md-6 mb-4">
+              <h6 className="text-uppercase fw-bold fs-14">Partners</h6>
+              <ul className="list-unstyled">
+                <li><Link href="#" className="text-white text-decoration-none fs-12">Florida Water Association</Link></li>
+                <li><Link href="#" className="text-white text-decoration-none fs-12">Rainforest Trust</Link></li>
+                <li><Link href="#" className="text-white text-decoration-none fs-12">Saving the Rainforest</Link></li>
+                <li><Link href="#" className="text-white text-decoration-none fs-12">Koadas Wildlife Sanctuary</Link></li>
               </ul>
             </div>
 
-            <div class="col-lg-3 col-md-6 mb-4">
-              <h6 class="text-uppercase fw-bold fs-10">Get in Touch</h6>
-              <p class="mb-1 fw-bold fs-10">NaturePress Fund</p>
-              <p class="mb-1 fs-10">2976 Washington St</p>
-              <p class="mb-1 fs-10">San Francisco, CA 94115</p>
-              <p class="mb-0 fs-10">Call us: +615 4640 3304</p>
+            <div className="col-lg-3 col-md-6 mb-4">
+              <h6 className="text-uppercase fw-bold fs-10">Get in Touch</h6>
+              <p className="mb-1 fw-bold fs-10">NaturePress Fund</p>
+              <p className="mb-1 fs-10">2976 Washington St</p>
+              <p className="mb-1 fs-10">San Francisco, CA 94115</p>
+              <p className="mb-0 fs-10">Call us: +615 4640 3304</p>
             </div>
           </div>
         </div>
