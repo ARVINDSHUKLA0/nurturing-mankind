@@ -82,10 +82,17 @@
     z-index: 98;
 }
 .custom-text-font-size{
-    font-size: 30px;
+    font-size: 35px;
     width: 100%;
     text-align: center;
     width: 100vw;
+}
+.slick-arrow.slick-next{
+    position: absolute;
+    display: block;  
+    left: 94% !important;
+    top: 50%; 
+    z-index: 98;
 }
 }
 @media (min-width: 376px) and (max-width: 525px) {
