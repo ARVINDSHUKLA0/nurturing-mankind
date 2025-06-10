@@ -57,7 +57,7 @@ export default function Navbar() {
                       onClick={(e) => toggleSubMenu('about', e)}
                     ></i>
                   </div>
-                  <ul className={`dropdown-wrapper p-0 ${openSubMenu === 'pages' ? 'submenu-open' : ''}`}>
+                  <ul className={`dropdown-wrapper p-0 ${openSubMenu === 'about' ? 'submenu-open' : ''}`}>
                     <li className="list-style-none py-2 dropdown-bottom-border"><Link href="/faqs" onClick={closeAllMenus} className="text-decoration-none text-white text-uppercase fs-10">Introduction</Link></li>
                     <li className="list-style-none py-2 dropdown-bottom-border"><Link href="/about" onClick={closeAllMenus} className="text-decoration-none text-white text-uppercase fs-10">Vision</Link></li>
                     <li className="list-style-none py-2 dropdown-bottom-border"><Link href="/contact" onClick={closeAllMenus} className="text-decoration-none text-white text-uppercase fs-10">Mission</Link></li>
