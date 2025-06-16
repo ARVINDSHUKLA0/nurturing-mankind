@@ -12,21 +12,33 @@ export default function Banner() {
   const BannerArr = [
     {
       id: 1,
-      BannerImg: '/assets/img/banner-1.jpg',
+      BannerImg: '/assets/img/banner-1.jpeg',
       hediingBanner: (
         <>
-          project <br /> rainforests, <br /> species & planet
+          Empowering Lives.
         </>
       ),
+      Subheadline : ' Building a better world through education, healthcare, sustainable livelihoods, women empowerment, animal welfare, and environmental conservation.'
     },
     {
       id: 2,
-      BannerImg: '/assets/img/banner-2.jpg',
+      BannerImg: '/assets/img/banner-2.jpeg',
       hediingBanner: (
         <>
-          a race against <br /> time 
+           PawTech Shield 
         </>
       ),
+      Subheadline : "Free Vaccines, Safer Streets"
+    },
+    {
+      id: 3,
+      BannerImg: '/assets/img/banner-3.jpeg',
+      hediingBanner: (
+        <>
+          From Skills to Strength
+        </>
+      ),
+      Subheadline : "Uplifting Women, One Step at a Time"
     },
   ];
 
@@ -60,15 +72,7 @@ export default function Banner() {
                 <h2 className={`text-white text-uppercase custom-text-font-size ${activeSlide === index ? 'slide-in-heading' : ''}`}>
                   {item.hediingBanner}
                 </h2>
-              </div>
-              <div className={`d-flex justify-content-center align-items-center gap-3 pt-4 ${activeSlide === index ? 'slide-in-buttons' : ''}`}>
-                <div className='text-white'>
-                  <button className='border-0 cutom-all-bg text-white fs-10 py-2 px-3 text-uppercase'>get involved</button>
-                </div>
-                <span className='text-white fs-10'>or</span>
-                <div className='text-white'>
-                  <button className='send-btn-custom py-2 px-3 fs-10 text-uppercase text-white'>engage events</button>
-                </div>
+                <p className='text-center text-white fs-16 fw-bold px-lg-5'>{item.Subheadline}</p>
               </div>
             </div>
           </div>

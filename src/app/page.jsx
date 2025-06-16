@@ -1,94 +1,82 @@
 'use client';
 import Navbar from '@/components/navbar';
 import Banner from '@/components/banner';
-import styles from './page.module.css';
-import Image from 'next/image';
-import CountUp from 'react-countup';
-import { useInView } from 'react-intersection-observer';
+import styles from './page.module.css';  
 import Footer from '@/components/Footer';
 
-const Page = () => {
-  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.5 });
+const Page = () => { 
   return (
     <main>
-      <Navbar />
+      <Navbar hasBanner={true} />
       <Banner />
       <section className={` container py-130 ${styles.section}`}>
-        <div className={styles.decorTop}>
-          <Image src="/assets/img/np-bg-1.png" alt="leaf-top" width={160} height={270} />
-        </div>
-
         <div className="container p-0">
           <div className="row align-items-center m-0">
             <div className="col-lg-4 col-md-4 col-sm-12 col-12 mb-3">
               <div className={styles.blueBox}>
-                <h2>Help protect the world's rainforests.</h2>
+                <h2>Nurturing Hope. Empowering Lives.</h2>
               </div>
             </div>
 
             <div className="col-lg-8 col-md-8 col-sm-12 col-12">
               <div className="row align-items-center m-0">
                 <div className="col-lg-4 col-md-4 col-sm-4 col-12">
-                  <h5 className={styles.title}>Diversity</h5>
+                  <h5 className={styles.title}>Vision</h5>
                   <p className="fs-14">
-                    The concept is based on the premise that differences in species composition between areas are correlated with differences in environmental conditions.
+                     To nurture mankind and all interconnected realms of life human, animal...
                   </p>
                 </div>
                 <div className="col-lg-4 col-md-4 col-sm-4 col-12">
-                  <h5 className={styles.titleRed}>Sustainability</h5>
+                  <h5 className={styles.titleRed}>Mission </h5>
                   <p className="fs-14">
-                    Responsible interaction with the environment to avoid depletion or degradation of natural resources and allow for long-term environmental quality.
+                   To serve and uplift communities by integrating the values of sustainability, empathy...
                   </p>
                 </div>
-                <div className="col-lg-4 col-md-4 col-sm-4 col-12 mt-md-5 mt-lg-3">
-                  <h5 className={styles.titleOrange}>Ethics & Value</h5>
+                <div className="col-lg-4 col-md-4 col-sm-4 col-12 mt-md-5 mt-lg-0">
+                  <h5 className={styles.titleOrange}>Our Values</h5>
                   <p className="fs-14">
-                    Our project concerns human beings' ethical relationship with the natural environment. A serious problem exists with respect to the status and meaning of ,'environmental values'.
+                    At Nurturing Mankind, our work is guided by a set of unwavering values that reflect...
                   </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className={styles.decorBottom}>
-          <Image src="/assets/img/np-bg-2.png" alt="leaf" fill />
-        </div>
-
       </section>
 
-      <section className={`${styles.imgesContent}`}>
+      <section className={`${styles.imgesContent} mb-5`}>
         <div className="row m-0">
-          <div className="col-lg-3 col-md-3 col-sm-6 col-12 p-0 position-relative">
+          <div className="col-lg-4 col-md-4 col-sm-6 col-12 p-0 position-relative">
             <div className={`${styles.imgesContinerCenter}`}>
               <img className='img-fluid' src="/assets/img/Imges-1.jpg" alt="" />
             </div>
             <div className={`${styles.ImgesPostion}`}>
-              <h6 className='text-white fw-bold text-uppercase'>Glacier Melt</h6>
-              <p className='fs-12 text-white'>The concept is based on the premise that differences in species composition between areas are correlated with differences in environmental conditions.</p>
+              <h6 className='text-white fw-bold text-uppercase'>Eradicating Dog mediated Rabies by 2030 </h6>
+              <p className='fs-12 text-white'>It is estimated that the stray dog population in the Delhi NCR region is more than 10 lakh of which the Noida region alone consists of approx. 70,000 stray  Reed more...</p>
               <p className='text-uppercase fs-12 fw-bold text-white'>learn more <span> <i className="fa-solid fa-arrow-right text-white ps-2 fs-14"></i></span></p>
             </div>
           </div>
-          <div className="col-lg-3 col-md-3 col-sm-6 col-12 p-0 position-relative">
+          <div className="col-lg-4 col-md-4 col-sm-6 col-12 p-0 position-relative">
             <div className={`${styles.imgesContinerCenter}`}>
-              <img className='img-fluid' src="/assets/img/Imges-2.jpg" alt="" />
+              <img className='img-fluid' src="/assets/img/Imges-2.avif" alt="" />
             </div>
             <div className={`${styles.ImgesPostion}`}>
-              <h6 className='text-white fw-bold text-uppercase'>Species Protection</h6>
-              <p className='fs-12 text-white'>The concept is based on the premise that differences in species composition between areas are correlated with differences in environmental conditions.</p>
+              <h6 className='text-white fw-bold text-uppercase'>Reducing Stray Dogs Hit & Run Road Fatalities </h6>
+              <p className='fs-12 text-white'>On a day to day basis especially during low visibility in urban areas many accidents happen due to the sudden appearance of a stray dog on the Reed more...</p>
               <p className='text-uppercase fs-12 fw-bold text-white'>learn more <span> <i className="fa-solid fa-arrow-right text-white ps-2 fs-14"></i></span></p>
             </div>
           </div>
-          <div className="col-lg-3 col-md-3 col-sm-6 col-12 p-0 position-relative">
+          <div className="col-lg-4 col-md-4 col-sm-6 col-12 p-0 position-relative">
             <div className={`${styles.imgesContinerCenter}`}>
-              <img className='img-fluid' src="/assets/img/Imges-3.jpg" alt="" />
+              <img className='img-fluid' src="/assets/img/Imges-3.jpeg" alt="" />
             </div>
             <div className={`${styles.ImgesPostion}`}>
-              <h6 className='text-white fw-bold text-uppercase'>Water Cycle</h6>
-              <p className='fs-12 text-white'>The concept is based on the premise that differences in species composition between areas are correlated with differences in environmental conditions.</p>
+              <h6 className='text-white fw-bold text-uppercase'>Vaccinating Stray Dogs against life threatening diseases </h6>
+              <p className='fs-12 text-white'>There are several diseases which are life threatening in nature for dogs, with rabies and canine distemper being particularly serious Reed more...</p>
               <p className='text-uppercase fs-12 fw-bold text-white'>learn more <span> <i className="fa-solid fa-arrow-right text-white ps-2 fs-14"></i></span></p>
             </div>
           </div>
-          <div className="col-lg-3 col-md-3 col-sm-6 col-12 p-0 position-relative">
+          {/* <div className="col-lg-3 col-md-3 col-sm-6 col-12 p-0 position-relative">
             <div className={`${styles.imgesContinerRight}`}>
               <img className='img-fluid' src="/assets/img/Imges-4.jpg" alt="" />
             </div>
@@ -97,12 +85,12 @@ const Page = () => {
               <p className='fs-12 text-white'>The concept is based on the premise that differences in species composition between areas are correlated with differences in environmental conditions.</p>
               <p className='text-uppercase fs-12 fw-bold text-white'>learn more <span> <i className="fa-solid fa-arrow-right text-white ps-2 fs-14"></i></span></p>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 
 
-      <section>
+      {/* <section>
         <div className="container py-130">
           <div className="row">
             <div className={`col-lg-5 col-md-5 col-sm-12 col-12 d-flex align-items-md-start justify-content-md-end mb-4`}>
@@ -183,9 +171,9 @@ const Page = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <section className=' py-lg-5 py-3 bg-light'>
+      {/* <section className=' py-lg-5 py-3 bg-light'>
         <div className="container">
           <h2 className='my-5 ps-md-2 ps-1'>Protect and enhance <br /> environment for future <br />  generations.</h2>
           <div className="row m-0">
@@ -235,9 +223,9 @@ const Page = () => {
         </div>
 
 
-      </section>
+      </section> */}
 
-      <section>
+      {/* <section>
         <div className="row m-0">
           <div className="col-lg-6 col-md-6 col-sm-12 col-12 d-md-block d-none">
             <img className='img-fluid' src="/assets/img/send-row-count.jpg" alt="" />
@@ -267,9 +255,9 @@ const Page = () => {
 
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <section className={`py-50 ${styles.zIndexCustom}`}>
+      {/* <section className={`py-50 ${styles.zIndexCustom}`}>
         <div className="container">
           <div className="row">
             <div className="row m-0">
@@ -309,7 +297,7 @@ const Page = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className={`${styles.footerHome}`}>
         <Footer />
