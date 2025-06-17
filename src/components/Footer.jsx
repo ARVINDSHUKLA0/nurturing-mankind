@@ -45,7 +45,7 @@ export default function Footer() {
               <ul className="list-unstyled">
                 <li><Link href="#" className="text-white text-decoration-none fs-12">News & Events</Link></li>
                 <li><Link href="#" className="text-white text-decoration-none fs-12">Impact Stories</Link></li>
-                <li><Link href="#" className="text-white text-decoration-none fs-12">Contact Us</Link></li> 
+                <li><Link href="/Contact" className="text-white text-decoration-none fs-12">Contact Us</Link></li> 
                 <li><Link href="/Testimonials" className="text-white text-decoration-none fs-12">Testimonials </Link></li> 
               </ul>
             </div>
