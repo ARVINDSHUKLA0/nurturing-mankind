@@ -16,6 +16,9 @@
     margin-bottom: 30px;
 
   }
+  .custom-navbar-bg{
+    background-color: #2D2E35;
+  }
 
   
 
@@ -28,9 +31,10 @@
     position: absolute;
     top: 100%;
     width: 200px;
-    padding: 15px !important;
+    padding: 10px 15px 30px 15px !important;
+    
     display: none;
-    background-color: #455660;
+    background-color: #455660e9;
     border-radius: 4px;
     z-index: 100;
   }

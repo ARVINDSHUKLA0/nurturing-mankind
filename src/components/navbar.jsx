@@ -28,7 +28,7 @@ export default function Navbar({ hasBanner }) {
   };
 
   return (
-    <nav className={`${!hasBanner ? 'bg-dark pb-2' : ''}`}>
+    <nav className={`${!hasBanner ? 'custom-navbar-bg pb-2' : ''}`}>
       <section className="container">
         <header className="position-relative">
           <div className={`d-flex align-items-center justify-content-between custom-navbar ${hasBanner ? 'NavBarabsolute' : 'Navbarrelative'}`}>
@@ -38,7 +38,7 @@ export default function Navbar({ hasBanner }) {
               </div>
               <div>
                 <Link href="/" onClick={closeAllMenus}>
-                  <img src="/assets/img/logo.png" alt="Logo" width={70} />
+                  <img src="/assets/img/logo-1.png" alt="Logo" width={70} />
                 </Link>
               </div>
 
@@ -109,7 +109,7 @@ export default function Navbar({ hasBanner }) {
                     </ul>
                   </li>
                   <li className="list-style-none py-2"><Link href="/workus" onClick={closeAllMenus} className="text-decoration-none custom-all-color-white text-uppercase fs-12 ">Work with Us</Link></li>
-                  <li className="list-style-none py-2"><Link href="/gallery" onClick={closeAllMenus} className="text-decoration-none custom-all-color-white text-uppercase fs-12 ">Gallery</Link></li>
+                  <li className="list-style-none py-2"><Link href="/Gallery" onClick={closeAllMenus} className="text-decoration-none custom-all-color-white text-uppercase fs-12 ">Gallery</Link></li>
                   <li className="list-style-none py-2"><Link href="/newsEvents" onClick={closeAllMenus} className="text-decoration-none custom-all-color-white text-uppercase fs-12 ">News & Events</Link></li>
                   <li className="list-style-none py-2"><Link href="/imStories" onClick={closeAllMenus} className="text-decoration-none custom-all-color-white text-uppercase fs-12 ">Impact Stories</Link></li>
 
