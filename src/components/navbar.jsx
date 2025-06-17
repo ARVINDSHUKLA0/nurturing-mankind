@@ -52,7 +52,7 @@ export default function Navbar({ hasBanner }) {
                   </li>
                   <li className="list-style-none position-relative dropdown-parent">
                     <div className="d-flex align-items-center justify-content-between">
-                      <Link href="/about" className="text-decoration-none custom-all-color-white text-uppercase fs-12 py-lg-4 py-2 mt-1">about</Link>
+                      <Link href="#" className="text-decoration-none custom-all-color-white text-uppercase fs-12 py-lg-4 py-2 mt-1">about</Link>
                       <i
                         className={`fa-solid fa-caret-down ps-2 mt-1 text-white fs-10 cursor-pointer d-xl-none ${openSubMenu === 'about' ? 'rotate-180' : ''}`}
                         onClick={(e) => toggleSubMenu('about', e)}

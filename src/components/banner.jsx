@@ -15,7 +15,7 @@ export default function Banner() {
       BannerImg: '/assets/img/banner-1.jpeg',
       hediingBanner: (
         <>
-          Empowering Lives.
+          Nurturing Lives.
         </>
       ),
       Subheadline : ' Building a better world through education, healthcare, sustainable livelihoods, women empowerment, animal welfare, and environmental conservation.'
