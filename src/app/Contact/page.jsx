@@ -14,9 +14,6 @@ const page = () => {
                   <p className='fs-16 fst-italic m-0'>C-26, Sector 65, Noida, Uttar Pradesh, INDIA </p>
                   <p className='fs-16 fst-italic m-0'>Contact: +91- 9319471666 </p>
                   <p className='fs-16 fst-italic m-0'>Care@nurturingmankind.org </p>
-                  <p className='fs-16 fst-italic m-0'>Pawtech Sheild Campaigns </p>
-                  <p className='fs-16 fst-italic m-0'>Free Stray Dog Vaccination Drive </p>
-                  <p className='fs-16 fst-italic m-0 '>+91-9599407666, 9599417666 </p>
               </div>
           </div>
       </section>

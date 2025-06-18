@@ -9,7 +9,9 @@ const page = () => {
       <section className='py-lg-5 py-3'>
            <div className='container'>
                 <h4 className='fw-bold'>Vision</h4>
-                <p className='fs-14'> To nurture mankind and all interconnected realms of life — human, animal, and environmental — with the aim of enhancing the quality of life on Earth. <br /> We envision a compassionate and sustainable world where every being lives with dignity, harmony, and purpose.</p>
+                {/* <p className='fs-14'> To nurture mankind and all interconnected realms of life — human, animal, and environmental — with the aim of enhancing the quality of life on Earth. <br /> We envision a compassionate and sustainable world where every being lives with dignity, harmony, and purpose.</p> */}
+                <p className='fs-14'>To work towards nurturing the mankind and its related realms for the betterment of the quality of life on this planet
+</p>
            </div>
       </section> 
       <Footer/>

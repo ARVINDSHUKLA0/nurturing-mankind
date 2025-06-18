@@ -12,6 +12,16 @@ const page = () => {
                <p className='fs-14'>at <span className='fst-italic text-capitalize'> Nurturing Mankind,</span>  we believe that economic independence is key to empowerment — especially for women in underserved communities. Our <span className='fw-bold text-capitalize'>Livelihood Program </span> is focused on providing <span className='fw-bold text-capitalize'>vocational training, skill development,</span> and  <span className='fw-bold text-capitalize'>market linkages</span> <br /> We offer hands-on training in traditional crafts, eco-friendly product making, tailoring, food processing, and other skill-based activities tailored to local needs. Once trained, women are connected to <span className='fw-bold text-capitalize'> self-employment opportunities, micro-enterprises,</span> and  <span className='fw-bold text-capitalize'>fair trade markets,</span> allowing them to earn with dignity while contributing to their families and communities. <br /> Our approach not only helps break the cycle of poverty but also <span className='fw-bold text-capitalize'>revives traditional skills, supports local economies,</span>and  <span className='fw-bold text-capitalize'>promotes environmental sustainability</span>through conscious production practices. <br />By turning skills into livelihoods, we are building a generation of <span className='fw-bold text-capitalize'>financially independent, confident, and resilient women</span> who lead change from the ground up.</p>
            </div>
        </section>
+       <section>
+          <div className="row m-0 py-lg-5 py-3">
+              <div className="col-lg-6 col-md-6 col-sm-6 col-12 mb-3">
+                  <img className='img-fluid' src="/assets/img/livehood-1 (1).jpeg" alt="" />
+              </div>
+              <div className="col-lg-6 col-md-6 col-sm-6 col-12 mb-3">
+                  <img  className='img-fluid' src="/assets/img/livehood-1 (2).jpeg" alt="" />
+              </div>
+          </div>
+       </section>
        <Footer/>
     </>
   )

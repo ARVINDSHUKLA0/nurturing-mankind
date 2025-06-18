@@ -108,7 +108,7 @@ export default function Navbar({ hasBanner }) {
                       <li className="list-style-none py-2 dropdown-bottom-border"><Link href="/Donate" onClick={closeAllMenus} className="text-decoration-none text-white text-uppercase fs-10">Donate</Link></li>
                     </ul>
                   </li>
-                  <li className="list-style-none py-2"><Link href="/workus" onClick={closeAllMenus} className="text-decoration-none custom-all-color-white text-uppercase fs-12 ">Work with Us</Link></li>
+                  <li className="list-style-none py-2"><Link href="/WorkUs" onClick={closeAllMenus} className="text-decoration-none custom-all-color-white text-uppercase fs-12 ">Work with Us</Link></li>
                   <li className="list-style-none py-2"><Link href="/Gallery" onClick={closeAllMenus} className="text-decoration-none custom-all-color-white text-uppercase fs-12 ">Gallery</Link></li>
                   <li className="list-style-none py-2"><Link href="/newsEvents" onClick={closeAllMenus} className="text-decoration-none custom-all-color-white text-uppercase fs-12 ">News & Events</Link></li>
                   <li className="list-style-none py-2"><Link href="/imStories" onClick={closeAllMenus} className="text-decoration-none custom-all-color-white text-uppercase fs-12 ">Impact Stories</Link></li>

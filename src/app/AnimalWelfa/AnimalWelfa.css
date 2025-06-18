@@ -1,0 +1,10 @@
+.custom-height {
+    height: 300px;
+    width: 400px;
+}
+
+.custom-height img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}

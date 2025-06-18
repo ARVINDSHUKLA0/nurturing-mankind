@@ -1,5 +1,6 @@
 import Footer from '@/components/Footer'
 import Navbar from '@/components/navbar'
+import '../AnimalWelfa/AnimalWelfa.css'
 import React from 'react'
 
 const page = () => {
@@ -19,6 +20,20 @@ const page = () => {
           <p className='fs-14 m-0'>Improve Public Awareness </p>
           <p className='fs-14 m-0'>Reduce Man Dog Conflict </p>
         </div>
+      </section>
+
+      <section className='py-lg-5 py-3'>
+           <div className="row m-0 align-items-center justify-content-center">
+                <div className="col-lg-4 col-md-4 col-sm-6 col-12 custom-height mb-3">
+                    <img className='img-fluid' src="/assets/img/img-1.jpeg" alt="" />
+                </div>
+                <div className="col-lg-4 col-md-4 col-sm-6 col-12 custom-height mb-3">
+                    <img className='img-fluid' src="/assets/img/img-3.jpeg" alt="" />
+                </div>
+                <div className="col-lg-4 col-md-4 col-sm-6 col-12 custom-height mb-3 ">
+                    <img className='img-fluid' src="/assets/img/img-8.jpeg" alt="" />
+                </div>
+           </div>
       </section>
 
       <Footer/>
