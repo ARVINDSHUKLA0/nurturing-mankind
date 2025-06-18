@@ -10,7 +10,6 @@ const page = () => {
       <section className='pt-lg-3 pb-lg-5 py-3'>
         <div className="container py-lg-4 py-2">
           <h2 className="text-center text-danger fst-italic">Choose Your Perfect Plan</h2>
-          <p className='text-center text-danger fst-italic fw-bold pb-2'>Donations can avail Income Tax benefit </p>
           <div className="row row-cols-1 row-cols-md-3 g-4">
             <div className="col">
               <div className="card pricing-card h-100">
