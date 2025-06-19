@@ -45,8 +45,8 @@ export default function Footer() {
               <ul className="list-unstyled">
                 <li><Link href="#" className="text-white text-decoration-none fs-12">News & Events</Link></li>
                 <li><Link href="#" className="text-white text-decoration-none fs-12">Impact Stories</Link></li>
-                <li><Link href="/Contact" className="text-white text-decoration-none fs-12">Contact Us</Link></li> 
-                <li><Link href="/Testimonials" className="text-white text-decoration-none fs-12">Testimonials </Link></li> 
+                <li><Link href="/Contact" className="text-white text-decoration-none fs-12">Contact Us</Link></li>
+                <li><Link href="/Testimonials" className="text-white text-decoration-none fs-12">Testimonials </Link></li>
               </ul>
             </div>
           </div>
@@ -57,17 +57,20 @@ export default function Footer() {
         <div className="container">
           <div className='d-flex justify-content-center align-items-center'>
             <div>
-               <div className='d-flex gap-3 mt-2 mb-3'>
-                    <button className='d-flex justify-content-center align-items-center bg-transparent border-0'>
-                        <i className="fa-brands fa-instagram text-white"></i>
-                        <p className='text-uppercase fs-10 text-white m-0 ps-2'>instagram</p>
-                    </button>
-                    
-                    <button className='d-flex justify-content-center align-items-center bg-transparent border-0'>
-                        <i className="fa-brands fa-facebook text-white"></i>
-                        <p className='text-uppercase fs-10 text-white m-0 ps-2'>facebook</p>
-                    </button>
-               </div>
+              <div className='d-flex gap-3 mt-2 mb-3'>
+                <Link className='text-decoration-none' href="https://instagram.com/nurturingmankind">
+                <button className='d-flex justify-content-center align-items-center bg-transparent border-0'>
+                  <i className="fa-brands fa-instagram text-white"></i>
+                  <p className='text-uppercase fs-10 text-white m-0 ps-2'>instagram</p>
+                </button>
+                </Link>
+                <Link className='text-decoration-none' href="https://www.facebook.com/nurturingmankind">
+                  <button className='d-flex justify-content-center align-items-center bg-transparent border-0'>
+                    <i className="fa-brands fa-facebook text-white"></i>
+                    <p className='text-uppercase fs-10 text-white m-0 ps-2'>facebook</p>
+                  </button>
+                </Link>
+              </div>
             </div>
           </div>
 
