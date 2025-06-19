@@ -95,6 +95,7 @@ const Page = () => {
         <div className="container py-lg-5 py-3">
           <div className="row m-0 justify-content-center align-items-center ">
             <div className="col-lg-6 col-md-6 col-sm-12 col-12 bg-light custom-donate-main-conatiner py-5">
+               <p className='fs-16 text-center text-danger fw-bold fst-italic'>Donations can avail Income Tax benefit</p>
               <div className="text-center">
                 {step === 1 && (
                   <div>
