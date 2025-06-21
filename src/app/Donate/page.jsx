@@ -275,7 +275,7 @@ const Page = () => {
                         <p className='fs-14 m-0'><span className='fw-bold'>Bank Branch</span>: Sector 31, Noida</p>
                       </div>
                       <div className="col-lg-6 col-md-6 col-sm-12 col-12 text-sm-end text-start mb-3">
-                        <img className='img-fluid' src="/assets/img/payment.jpeg" alt="Payment QR Code" />
+                        <img className='img-fluid' src="/assets/img/payment.png" alt="Payment QR Code" />
                       </div>
                     </div>
                     <button
